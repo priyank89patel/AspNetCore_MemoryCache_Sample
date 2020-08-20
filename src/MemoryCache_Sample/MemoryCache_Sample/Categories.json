@@ -1,0 +1,106 @@
+﻿[
+	{
+		"id": 1,
+		"name": "Environmental",
+		"subCategories": [
+			{
+				"id": 100,
+				"name": "Facility Maintenance",
+				"subCategories": null
+			},
+			{
+				"id": 101,
+				"name": "Janitor Supplies",
+				"subCategories": null
+			},
+			{
+				"id": 102,
+				"name": "Floor Care",
+				"subCategories": null
+			},
+			{
+				"id": 103,
+				"name": "Housekeeping",
+				"subCategories": null
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Food Service",
+		"subCategories": [
+			{
+				"id": 200,
+				"name": "Smallwares",
+				"subCategories": null
+			},
+			{
+				"id": 201,
+				"name": "Cooking Equipment",
+				"subCategories": null
+			},
+			{
+				"id": 202,
+				"name": "Breakroom Supplies",
+				"subCategories": null
+			},
+			{
+				"id": 203,
+				"name": "Food Preparation",
+				"subCategories": null
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Furnishings",
+		"subCategories": [
+			{
+				"id": 300,
+				"name": "Room Decor",
+				"subCategories": null
+			},
+			{
+				"id": 301,
+				"name": "Specialty Room Furniture",
+				"subCategories": null
+			},
+			{
+				"id": 302,
+				"name": "Common Area Furniture",
+				"subCategories": null
+			},
+			{
+				"id": 303,
+				"name": "Office Furniture",
+				"subCategories": null
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Healthcare Clinical",
+		"subCategories": [
+			{
+				"id": 400,
+				"name": "Med Mgmt, Carts & Charting",
+				"subCategories": null
+			},
+			{
+				"id": 401,
+				"name": "Resident Monitoring",
+				"subCategories": null
+			},
+			{
+				"id": 402,
+				"name": "Diagnostic Equipment",
+				"subCategories": null
+			},
+			{
+				"id": 403,
+				"name": "Respiratory",
+				"subCategories": null
+			}
+		]
+	}
+]
