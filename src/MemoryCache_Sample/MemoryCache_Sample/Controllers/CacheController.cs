@@ -49,15 +49,18 @@ namespace MemoryCache_Sample.Controllers
         public IActionResult SetCacheContents(CacheRequest request)
         {
             object cacheContents = null;
+            int expiresInMinutes;
             try
             {
-                if (request.ExpiresInMinutes < 1 || request.ExpiresInMinutes > 60)
+                expiresInMinutes = request.ExpiresInMinutes.HasValue ? request.ExpiresInMinutes.Value : 30;
+
+                if (expiresInMinutes < 1 || expiresInMinutes > 60)
                     return BadRequest("Cache expiry time shoud be between 0 and 60 min(s)");
 
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
                 {
-                    SlidingExpiration = TimeSpan.FromMinutes(request.ExpiresInMinutes / 2),
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(request.ExpiresInMinutes)
+                    SlidingExpiration = TimeSpan.FromMinutes(expiresInMinutes / 2),
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(expiresInMinutes)
                 };
 
                 cacheContents = _cache.Set(request.Key, request.Data, cacheEntryOptions);

@@ -9,6 +9,6 @@ namespace MemoryCache_Sample.Models
     {
         public string Key { get; set; }
         public object Data { get; set; }
-        public int ExpiresInMinutes { get; set; }
+        public int? ExpiresInMinutes { get; set; }
     }
 }
